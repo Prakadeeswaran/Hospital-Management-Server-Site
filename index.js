@@ -154,6 +154,10 @@ async function run() {
 }
 run().catch(console.dir);
 
+app.post("/contact", (req, res) => {
+  res.send("Succ");
+});
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
