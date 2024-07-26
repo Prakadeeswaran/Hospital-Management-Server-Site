@@ -155,7 +155,7 @@ async function run() {
 run().catch(console.dir);
 
 app.post("/contact", (req, res) => {
-  res.send("Succ");
+  res.json({status:"succ",message:"User added successfully"});
 });
 
 app.get("/", (req, res) => {
